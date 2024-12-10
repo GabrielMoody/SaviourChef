@@ -1,6 +1,6 @@
 # 🎮 Saviour Chef
 
-Group Final project of Game Development course with a main theme based on second SDG goal, which is zero hunger. 
+Group final project of Game Development course with a main theme based on second SDG goal, which is zero hunger. 
 The primary objective of this game is for players to take on the role of a kind-hearted chef who provides food and drinks for free to the hungry people in a village. 
 It is a 2D-based game with a simple design and easy gameplay.
 
