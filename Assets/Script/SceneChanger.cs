@@ -13,7 +13,7 @@ public class SceneChanger : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Level_UI");
     }
 
     public void Level1()
