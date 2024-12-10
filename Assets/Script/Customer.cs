@@ -13,11 +13,12 @@ public class Customer : MonoBehaviour
     public Sprite MaleSprite;
     public Sprite FemaleSprite;
     private SpriteRenderer spriteRenderer;
-    public int limit;
+    private Image imageRenderer;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        imageRenderer = GetComponent<Image>();
     }
     void Start()
     {
@@ -31,7 +32,9 @@ public class Customer : MonoBehaviour
 
     public void Randomize()
     {
-        spriteRenderer.sprite = Random.value > 0.5f ? MaleSprite : FemaleSprite;
+        UnityEngine.Sprite name = Random.value > 0.5f ? MaleSprite : FemaleSprite;
+        spriteRenderer.sprite = name;
+        // imageRenderer.sprite = name;
     }
 
     void Update()

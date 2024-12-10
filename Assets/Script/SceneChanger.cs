@@ -13,6 +13,11 @@ public class SceneChanger : MonoBehaviour
 
     public void PlayGame()
     {
+        SceneManager.LoadScene("Story");
+    }
+
+    public void SelectLevel()
+    {
         SceneManager.LoadScene("Level_UI");
     }
 
