@@ -1928,8 +1928,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 57b33ae398bfabf47a393ec6a4b53e67, type: 3}
   dishImage: {fileID: 654542343}
   gameManager: {fileID: 813776191}
-  MaleSprite: {fileID: 21300000, guid: e455fb24039f98144bcad753782f44ed, type: 3}
-  FemaleSprite: {fileID: 21300000, guid: 7f806b786e75b1f4a9a5bf08cff4a650, type: 3}
+  orangSprite:
+  - {fileID: 21300000, guid: e455fb24039f98144bcad753782f44ed, type: 3}
+  - {fileID: 21300000, guid: 7f806b786e75b1f4a9a5bf08cff4a650, type: 3}
 --- !u!1 &752238934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4319,8 +4320,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 57b33ae398bfabf47a393ec6a4b53e67, type: 3}
   dishImage: {fileID: 1507491896}
   gameManager: {fileID: 813776191}
-  MaleSprite: {fileID: 21300000, guid: e455fb24039f98144bcad753782f44ed, type: 3}
-  FemaleSprite: {fileID: 21300000, guid: 7f806b786e75b1f4a9a5bf08cff4a650, type: 3}
+  orangSprite:
+  - {fileID: 21300000, guid: e455fb24039f98144bcad753782f44ed, type: 3}
+  - {fileID: 21300000, guid: 7f806b786e75b1f4a9a5bf08cff4a650, type: 3}
 --- !u!1 &1613906348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,8 +4619,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 57b33ae398bfabf47a393ec6a4b53e67, type: 3}
   dishImage: {fileID: 601186749}
   gameManager: {fileID: 813776191}
-  MaleSprite: {fileID: 21300000, guid: e455fb24039f98144bcad753782f44ed, type: 3}
-  FemaleSprite: {fileID: 21300000, guid: 7f806b786e75b1f4a9a5bf08cff4a650, type: 3}
+  orangSprite:
+  - {fileID: 21300000, guid: e455fb24039f98144bcad753782f44ed, type: 3}
+  - {fileID: 21300000, guid: 7f806b786e75b1f4a9a5bf08cff4a650, type: 3}
 --- !u!1 &1873308177
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,8 +10,7 @@ public class Customer : MonoBehaviour
     private GameObject currentDropZone;
     public GameManager gameManager;
 
-    public Sprite MaleSprite;
-    public Sprite FemaleSprite;
+    public Sprite[] orangSprite;
     private SpriteRenderer spriteRenderer;
     private Image imageRenderer;
 
@@ -23,7 +22,7 @@ public class Customer : MonoBehaviour
     void Start()
     {
         Randomize();
-        string[] dishes = { "Bread", "Water", "Fish" };
+        string[] dishes = { "Bread", "Water", "Fish", "Meat", "Vegetable" };
 
         neededDish = dishes[Random.Range(0, dishes.Length)];
         UpdateDishImage(neededDish);
@@ -32,9 +31,9 @@ public class Customer : MonoBehaviour
 
     public void Randomize()
     {
-        UnityEngine.Sprite name = Random.value > 0.5f ? MaleSprite : FemaleSprite;
-        spriteRenderer.sprite = name;
-        // imageRenderer.sprite = name;
+        System.Random random = new System.Random();
+        int randomNumber = random.Next(0, 2);
+        spriteRenderer.sprite = orangSprite[randomNumber];
     }
 
     void Update()
@@ -47,13 +46,26 @@ public class Customer : MonoBehaviour
 
     private void UpdateDishImage(string dishName)
     {
-        if (dishName == "Bread")
+        if(dishSprites.Length == 3 ) {
+            if (dishName == "Bread")
             dishImage.sprite = dishSprites[0];
-        else if (dishName == "Water")
-            dishImage.sprite = dishSprites[1];
-        else if (dishName == "Fish")
-            dishImage.sprite = dishSprites[2];
-
+            else if (dishName == "Water")
+                dishImage.sprite = dishSprites[1];
+            else if (dishName == "Fish")
+                dishImage.sprite = dishSprites[2];
+        } else {
+            if (dishName == "Bread")
+                dishImage.sprite = dishSprites[0];
+            else if (dishName == "Water")
+                dishImage.sprite = dishSprites[1];
+            else if (dishName == "Fish")
+                dishImage.sprite = dishSprites[2];
+            else if (dishName == "Meat")
+                dishImage.sprite = dishSprites[3];
+            else if (dishName == "Vegetable")
+                dishImage.sprite = dishSprites[4];
+        }
+        
         dishImage.enabled = true;
     }
 
