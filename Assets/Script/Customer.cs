@@ -46,25 +46,16 @@ public class Customer : MonoBehaviour
 
     private void UpdateDishImage(string dishName)
     {
-        if(dishSprites.Length == 3 ) {
-            if (dishName == "Bread")
+        if (dishName == "Bread")
             dishImage.sprite = dishSprites[0];
-            else if (dishName == "Water")
-                dishImage.sprite = dishSprites[1];
-            else if (dishName == "Fish")
-                dishImage.sprite = dishSprites[2];
-        } else {
-            if (dishName == "Bread")
-                dishImage.sprite = dishSprites[0];
-            else if (dishName == "Water")
-                dishImage.sprite = dishSprites[1];
-            else if (dishName == "Fish")
-                dishImage.sprite = dishSprites[2];
-            else if (dishName == "Meat")
-                dishImage.sprite = dishSprites[3];
-            else if (dishName == "Vegetable")
-                dishImage.sprite = dishSprites[4];
-        }
+        else if (dishName == "Water")
+            dishImage.sprite = dishSprites[1];
+        else if (dishName == "Fish")
+            dishImage.sprite = dishSprites[2];
+        else if (dishName == "Meat")
+            dishImage.sprite = dishSprites[3];
+        else if (dishName == "Vegetable")
+            dishImage.sprite = dishSprites[4];
         
         dishImage.enabled = true;
     }
